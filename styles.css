@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 80px 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header .header-content {
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header .btn {
+    padding: 10px 20px;
+    background: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background: #ff6347;
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Services Section */
+#services {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 60px 0;
+}
+
+.service-card {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-card h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 1em;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background: #ff7f50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background: #ff6347;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #000;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #ff7f50;
+}
+
+/* Google Map */
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}

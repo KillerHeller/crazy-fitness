@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <h1>Welcome to Crazy Fitness</h1>
+        <p>Your fitness journey starts here</p>
+        <a href="#contact" class="btn">Join Now</a>
+    </div>
+</header>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>At Crazy Fitness, we provide personalized fitness solutions with the right blend of expertise and motivation. Whether you're looking for personal training, group classes, or nutrition guidance, we are here to help you reach your goals!</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    
+    <!-- Zumba Training -->
+    <div class="service-card">
+        <h3>Zumba Training</h3>
+        <img src="https://www.simplybusiness.co.uk/wp-content/uploads/sites/3/2024/06/zumba-instructor-insurance.png" alt="Zumba Training">
+        <p>Join our high-energy Zumba classes that combine fun music with easy-to-follow dance steps.</p>
+    </div>
+    
+    <!-- Strength Training -->
+    <div class="service-card">
+        <h3>Strength Training</h3>
+        <img src="https://backinmotionsspt.com/wp-content/uploads/2020/01/AdobeStock_135845464-scaled-1.jpeg" alt="Strength Training">
+        <p>Our strength training programs help build muscle, improve endurance, and enhance overall strength.</p>
+    </div>
+    
+    <!-- Cross-fit Training -->
+    <div class="service-card">
+        <h3>Cross-fit Training</h3>
+        <img src="https://hips.hearstapps.com/hmg-prod/images/cross-fit-1518811942.jpg" alt="Cross-fit Training">
+        <p>Experience high-intensity Cross-fit training that targets strength, endurance, and flexibility.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Visit us at Crazy Fitness:</p>
+    <p>1/6-B, S Purbachal Hospital Rd, opposite Udayan Sangha Club, Sukhpally, Haltu, Kolkata, West Bengal 700078</p>
+    <p>Phone: 07980307076</p>
+
+    <!-- Embed Google Map -->
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=1/6-B,+S+Purbachal+Hospital+Rd,+Kolkata,+West+Bengal+700078&output=embed" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2024 Crazy Fitness. All Rights Reserved.</p>
+    <div class="social-links">
+        <p>Follow us on Instagram:</p>
+        <a href="https://www.instagram.com/the_crazyy_fitness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@the_crazyy_fitness</a>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Send the form data to the backend using Fetch API
+        fetch('/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, email, message })
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert('Message sent successfully!');
+            document.getElementById('contact-form').reset();
+        })
+        .catch(error => {
+            alert('Error sending message');
+            console.error('Error:', error);
+        });
+    });
+</script>
+
+</body>
+</html>
