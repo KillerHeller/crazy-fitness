@@ -124,6 +124,55 @@ header .btn:hover {
 #contact-form button:hover {
     background: #ff6347;
 }
+/* WhatsApp icon styling */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #25d366;
+    border-radius: 50%; /* Makes the background circular */
+    width: 60px; /* Set width for the circle */
+    height: 60px; /* Set height for the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-icon a {
+    color: #fff;
+    font-size: 28px; /* Adjust icon size */
+    text-decoration: none;
+}
+
+.whatsapp-icon a:hover {
+    color: #f0f0f0;
+}
+/* Instagram Icon */
+.instagram-icon {
+    position: fixed;
+    bottom: 50px; /* Position from the bottom */
+    right: 10px; /* Position from the right, adjust as needed */
+    background-color: #E4405F; /* Instagram pink */
+    border-radius: 50%; /* Circular shape */
+    width: 60px; /* Circle width */
+    height: 60px; /* Circle height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.instagram-icon a {
+    color: #fff; /* Icon color */
+    font-size: 28px; /* Adjust icon size */
+    text-decoration: none;
+}
+
+.instagram-icon a:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+}
+
 
 /* Footer Section */
 footer {
