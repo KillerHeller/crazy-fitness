@@ -131,8 +131,8 @@ header .btn:hover {
     right: 10px;
     background-color: #25d366;
     border-radius: 50%; /* Makes the background circular */
-    width: 60px; /* Set width for the circle */
-    height: 60px; /* Set height for the circle */
+    width: 10px; /* Set width for the circle */
+    height: 10px; /* Set height for the circle */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,8 +155,8 @@ header .btn:hover {
     right: 10px; /* Position from the right, adjust as needed */
     background-color: #E4405F; /* Instagram pink */
     border-radius: 50%; /* Circular shape */
-    width: 60px; /* Circle width */
-    height: 60px; /* Circle height */
+    width: 10px; /* Circle width */
+    height: 10px; /* Circle height */
     display: flex;
     justify-content: center;
     align-items: center;
